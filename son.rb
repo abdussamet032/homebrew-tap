@@ -5,21 +5,21 @@
 class Son < Formula
   desc "Developer workspace launcher — open the right repo in the right workspace"
   homepage "https://github.com/abdussamet032/son"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abdussamet032/son/releases/download/v1.1.0/son_1.1.0_darwin_amd64.tar.gz"
-      sha256 "1ee20b5e5f9c6e7f6bc95eee8033b15975b20a5fef1039a601add0da733e3a19"
+      url "https://github.com/abdussamet032/son/releases/download/v1.2.0/son_1.2.0_darwin_amd64.tar.gz"
+      sha256 "a10509699f99200aa75c0f2f0a8a0028c9b5d9249ffea3a0a6a9482c1d2cae23"
 
       define_method(:install) do
         bin.install "son"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/abdussamet032/son/releases/download/v1.1.0/son_1.1.0_darwin_arm64.tar.gz"
-      sha256 "dbfcbdda96717e78f5ee913040abb2ce9949219b41fd56a470f7d7c94434c514"
+      url "https://github.com/abdussamet032/son/releases/download/v1.2.0/son_1.2.0_darwin_arm64.tar.gz"
+      sha256 "587197c74d6c3e12f590641cd61ec137b419e36688413f0f5108dff97ba9505d"
 
       define_method(:install) do
         bin.install "son"
@@ -29,15 +29,15 @@ class Son < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abdussamet032/son/releases/download/v1.1.0/son_1.1.0_linux_amd64.tar.gz"
-      sha256 "e10ba70eaf7e85aa3ddd640ca9124e4291cc03b6c7bfd92e89148603460b8fe3"
+      url "https://github.com/abdussamet032/son/releases/download/v1.2.0/son_1.2.0_linux_amd64.tar.gz"
+      sha256 "c209c5b1941dc3ace024fcbd45e84fdbfa0b68f8509d3951fc77b9a98a8d6fbd"
       define_method(:install) do
         bin.install "son"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abdussamet032/son/releases/download/v1.1.0/son_1.1.0_linux_arm64.tar.gz"
-      sha256 "f8a4df0a930f6232e0c7e891c62409bdc3839f95a2fbc49f0725afad61d02ab0"
+      url "https://github.com/abdussamet032/son/releases/download/v1.2.0/son_1.2.0_linux_arm64.tar.gz"
+      sha256 "e560e6d58554fdf589c983ef6d91bc45d9db6742ea07d2a9dbd8fbd421911daf"
       define_method(:install) do
         bin.install "son"
       end
